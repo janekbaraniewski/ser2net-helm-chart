@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "ser2net.fullname" . }}
+  labels:
+{{ include "ser2net.labels" . | indent 4 }}
+data:
+  ser2net.conf: |
+{{ .Values.device.ser2netConf | indent 4 }}

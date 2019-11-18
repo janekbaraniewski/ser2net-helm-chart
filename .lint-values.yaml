@@ -1,0 +1,4 @@
+device:
+  mountPath: /dev/mounted
+  hostPath: /dev/onHost
+  ser2netConf: 3333:raw:600:/dev/ttyUSB0:115200 8DATABITS NONE 1STOPBIT -XONXOFF LOCAL -RTSCTS HANGUP_WHEN_DONE
