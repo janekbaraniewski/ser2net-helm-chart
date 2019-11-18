@@ -14,6 +14,9 @@ $ helm install --name ser2net .
 |         Parameter          |                Description                 |                   Default                   |
 |----------------------------|--------------------------------------------|---------------------------------------------|
 | `shellCmd`                    | Container command                            | `ser2net && sleep inf`                   |
+| `device.mountPath`                    | Where to mount the device in the container                            | ` `                   |
+| `device.hostPath`                    | Which device from host                            | ` `                   |
+| `device.ser2netConf`                    | ser2net config string                            | ` `                   |
 | `image.repository`                    | ser2net image repository                            | `janekbaraniewski/ser2net`                   |
 | `image.tag`          | image tag | `latest`                              |
 | `image.pullPolicy`      | Image pull policy | `IfNotPresent`                                      |
